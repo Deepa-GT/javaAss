@@ -1,9 +1,14 @@
 services:
   - type: web
-    name: java-item-management
+    name: java-item-management-api
     env: docker
     branch: main
     dockerfilePath: ./Dockerfile
     envVars:
+      - key: PORT
+        value: 8080
       - key: JAVA_OPTS
         value: -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+    healthCheckPath: /health
+    buildCommand: ""
+    startCommand: ""
