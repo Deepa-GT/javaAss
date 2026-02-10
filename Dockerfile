@@ -1,4 +1,4 @@
 FROM eclipse-temurin:17-jdk-alpine
 VOLUME /tmp
-COPY target/item-management-0.0.1-SNAPSHOT.jar app.jar
+COPY target/item-management-api-1.0.0.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
