@@ -20,9 +20,4 @@ public class HealthController {
     public String apiHealth() {
         return "OK";
     }
-
-    @GetMapping("/api/items/health")
-    public String itemsHealth() {
-        return "OK";
-    }
 }

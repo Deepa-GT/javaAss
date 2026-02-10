@@ -66,4 +66,9 @@ public class ItemController {
         List<Item> items = itemService.getItemsByName(name);
         return ResponseEntity.ok(items);
     }
+
+    @GetMapping("/health")
+    public String itemsHealth() {
+        return "OK";
+    }
 }
