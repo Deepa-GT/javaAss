@@ -6,18 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthController {
 
-    @GetMapping("/")
-    public String healthCheck() {
-        return "Java Item Management API is running!";
-    }
-
     @GetMapping("/health")
     public String health() {
         return "OK";
     }
 
-    @GetMapping("/api/health")
-    public String apiHealth() {
+    @GetMapping("/api/items/health") 
+    public String itemsHealth() {
         return "OK";
     }
 }

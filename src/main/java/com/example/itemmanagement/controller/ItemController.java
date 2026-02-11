@@ -28,11 +28,6 @@ public class ItemController {
         return ResponseEntity.ok(items);
     }
 
-    @GetMapping("/health")
-    public String itemsHealth() {
-        return "OK";
-    }
-
     @GetMapping("/{id}")
     public ResponseEntity<Item> getItemById(@PathVariable Long id) {
         Optional<Item> item = itemService.getItemById(id);
