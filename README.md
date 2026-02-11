@@ -243,7 +243,40 @@ Application configuration can be modified in `src/main/resources/application.pro
 - Logging levels
 - Jackson serialization settings
 
+## Deployment
+
+### Local Deployment
+1. Build the application: `mvn clean package`
+2. Run the JAR: `java -jar target/item-management-api-1.0.0.jar`
+
+### Cloud Deployment (Render)
+1. Push your code to GitHub
+2. Connect your repository to Render.com
+3. Set build command: `mvn clean package`
+4. Set start command: `java -jar target/item-management-api-1.0.0.jar`
+5. Deploy automatically on git push
+
+## Demo
+
+A live demo is available at: `https://javaass.onrender.com/api/items`
+
+### Health Check
+```bash
+curl https://javaass.onrender.com/api/items/health
+```
+
+### Get All Items
+```bash
+curl https://javaass.onrender.com/api/items
+```
+
+## Support
+
+For questions or issues, please contact: dsvjavalinux@gmail.com
+
 ## License
+
+This project is licensed under the MIT License.
 
 This project is open source and available under the MIT License.
 

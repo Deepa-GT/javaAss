@@ -28,6 +28,11 @@ public class ItemController {
         return ResponseEntity.ok(items);
     }
 
+    @GetMapping("/health")
+    public String itemsHealth() {
+        return "OK";
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<Item> getItemById(@PathVariable Long id) {
         Optional<Item> item = itemService.getItemById(id);
@@ -65,10 +70,5 @@ public class ItemController {
     public ResponseEntity<List<Item>> searchItemsByName(@RequestParam String name) {
         List<Item> items = itemService.getItemsByName(name);
         return ResponseEntity.ok(items);
-    }
-
-    @GetMapping("/health")
-    public String itemsHealth() {
-        return "OK";
     }
 }
