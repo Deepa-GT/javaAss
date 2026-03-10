@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landmine Soft Gym</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Landmine Soft Gym</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#plans">Plans</a>
+      <a href="#schedules">Schedules</a>
+      <a href="#register">Register</a>
+      <a href="#login">Login</a>
+      <a href="#profile">Profile</a>
+      <a href="#admin">Admin</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>Fitness, discipline and results.</p>
+    </section>
+    <section id="plans">
+      <h2>Membership Plans</h2>
+      <div id="plans-list"></div>
+    </section>
+    <section id="schedules">
+      <h2>Workout Schedules</h2>
+      <select id="level-filter">
+        <option value="">All</option>
+        <option value="BEGINNER">Beginner</option>
+        <option value="INTERMEDIATE">Intermediate</option>
+        <option value="ADVANCED">Advanced</option>
+      </select>
+      <div id="schedule-list"></div>
+    </section>
+    <section id="register">
+      <h2>Register</h2>
+      <form id="register-form">
+        <input name="username" placeholder="Username" required>
+        <input name="password" type="password" placeholder="Password" required>
+        <input name="email" type="email" placeholder="Email">
+        <input name="fullName" placeholder="Full name">
+        <button type="submit">Create Account</button>
+      </form>
+      <div id="register-result"></div>
+    </section>
+    <section id="login">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input id="login-username" placeholder="Username" required>
+        <input id="login-password" type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <div id="login-status"></div>
+    </section>
+    <section id="profile">
+      <h2>My Profile</h2>
+      <button id="refresh-profile">Refresh</button>
+      <pre id="profile-data"></pre>
+      <h3>Membership</h3>
+      <pre id="membership-data"></pre>
+    </section>
+    <section id="admin">
+      <h2>Admin</h2>
+      <p>Use admin credentials to create plans and schedules.</p>
+      <form id="create-plan-form">
+        <input name="name" placeholder="Plan name" required>
+        <select name="duration">
+          <option>MONTHLY</option>
+          <option>QUARTERLY</option>
+          <option>YEARLY</option>
+        </select>
+        <input name="price" type="number" step="0.01" placeholder="Price" required>
+        <input name="features" placeholder="Features">
+        <button type="submit">Create Plan</button>
+      </form>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

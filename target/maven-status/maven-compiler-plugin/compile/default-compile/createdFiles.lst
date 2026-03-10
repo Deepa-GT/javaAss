@@ -1,6 +1,0 @@
-com\example\itemmanagement\model\Item.class
-com\example\itemmanagement\ItemManagementApplication.class
-com\example\itemmanagement\controller\ItemController.class
-com\example\itemmanagement\controller\HealthController.class
-com\example\itemmanagement\exception\GlobalExceptionHandler.class
-com\example\itemmanagement\service\ItemService.class
