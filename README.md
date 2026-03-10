@@ -77,3 +77,4 @@ The frontend will start on `http://localhost:5173` and will connect to the backe
 
 -   **Username**: `admin_db`
 -   **Password**: `admin123`
+# gym
